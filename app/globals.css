@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* SCRN Brand Colors */
+  --color-scrn-black: #0a0a0a;
+  --color-scrn-red: #cc0000;
+  --color-scrn-red-bright: #ff1a1a;
+  --color-scrn-dark: #1a1a1a;
+  --color-scrn-dark-2: #111111;
+  --color-scrn-silver: #a0a0a0;
+  --color-scrn-silver-light: #d0d0d0;
+
+  /* Varsity Voices Brand Colors */
+  --color-vv-navy: #0d1b2a;
+  --color-vv-navy-light: #1a2d42;
+  --color-vv-navy-mid: #142235;
+  --color-vv-red: #c41e3a;
+  --color-vv-gold: #c9a84c;
+  --color-vv-gold-light: #e2c06a;
+  --color-vv-off-white: #f5f0e8;
+
+  /* Fonts */
+  --font-display: var(--font-bebas);
+  --font-sans: var(--font-outfit);
+  --font-editorial: var(--font-fraunces);
+}
+
+/* ==================== SCRN GLOBAL STYLES ==================== */
+.scrn-page {
+  background-color: var(--color-scrn-black);
+  color: white;
+  font-family: var(--font-sans);
+}
+
+/* LED Dot Overlay */
+.led-texture {
+  background-image: url('/assets/background-led-dots.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Red glow utility */
+.glow-red {
+  box-shadow: 0 0 20px rgba(204, 0, 0, 0.5), 0 0 40px rgba(204, 0, 0, 0.2);
+}
+
+.glow-red-sm {
+  box-shadow: 0 0 10px rgba(204, 0, 0, 0.4);
+}
+
+/* Live pulse animation */
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.animate-live {
+  animation: live-pulse 1.5s ease-in-out infinite;
+}
+
+/* Fade up animation */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* ==================== VV GLOBAL STYLES ==================== */
+.vv-page {
+  background-color: var(--color-vv-navy);
+  color: var(--color-vv-off-white);
+  font-family: var(--font-sans);
+}
+
+/* Gold glow */
+.glow-gold {
+  box-shadow: 0 0 20px rgba(201, 168, 76, 0.4), 0 0 40px rgba(201, 168, 76, 0.15);
+}
+
+/* Audio waveform decoration */
+@keyframes waveform {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1); }
+}
+
+.waveform-bar {
+  animation: waveform 1.2s ease-in-out infinite;
+}
+
+/* ==================== SHARED ==================== */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Count-up number animation */
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-count {
+  animation: count-up 0.8s ease-out forwards;
+}
+
+/* Scroll-triggered visibility — hidden by default, JS adds visible class */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Red accent line */
+.red-rule {
+  width: 48px;
+  height: 3px;
+  background-color: var(--color-scrn-red);
+}
+
+/* Gold accent line */
+.gold-rule {
+  width: 48px;
+  height: 3px;
+  background-color: var(--color-vv-gold);
+}
