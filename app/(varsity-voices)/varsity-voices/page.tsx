@@ -54,7 +54,7 @@ export default function VarsityVoicesPage() {
           aria-hidden="true"
         />
 
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-20 md:pt-24">
           {/* Logo */}
           <div className="animate-fade-up flex justify-center mb-8">
             <div className="relative w-36 h-36 md:w-48 md:h-48">

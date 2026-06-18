@@ -11,15 +11,15 @@ export const metadata: Metadata = {
 
 function SponsorTile({ sponsor, size }: { sponsor: Sponsor; size: "lg" | "md" | "sm" }) {
   const sizeClasses = {
-    lg: "p-8 min-h-[140px]",
-    md: "p-6 min-h-[110px]",
-    sm: "p-5 min-h-[90px]",
+    lg: "p-8 min-h-[160px]",
+    md: "p-6 min-h-[130px]",
+    sm: "p-5 min-h-[110px]",
   };
 
   const imgHeight = {
-    lg: "h-16",
-    md: "h-12",
-    sm: "h-10",
+    lg: "h-20",
+    md: "h-16",
+    sm: "h-12",
   };
 
   const inner = (

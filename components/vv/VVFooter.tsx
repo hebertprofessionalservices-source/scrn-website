@@ -129,7 +129,7 @@ export function VVFooter() {
           <p className="text-vv-off-white/30 text-xs tracking-wide text-center">
             Created and maintained by Hebert Professional Services, LLC
           </p>
-          <div className="relative w-10 h-10 opacity-30">
+          <div className="relative w-20 h-16 opacity-40">
             <Image
               src="/assets/hps-logo.png"
               alt="Hebert Professional Services"

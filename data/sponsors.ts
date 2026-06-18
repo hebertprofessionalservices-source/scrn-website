@@ -23,7 +23,7 @@ export const sponsors: Sponsor[] = [
   { id: "william-carey", name: "William Carey University", tier: "platinum", logoFile: "williamCareyUniversity-logo.png", website: "https://wmcarey.edu/" },
   { id: "cherokee-brick", name: "Cherokee Brick", tier: "platinum", logoFile: "cherokeeBrick-logo-white.png", website: "https://cherokeebrick.com/" },
   { id: "t3", name: "T3 Global Projects", tier: "platinum", logoFile: "t3-logo.png", website: "https://t3globalprojects.com/" },
-  { id: "hps", name: "Hebert Professional Services", tier: "platinum", logoFile: "hps-logo.png" },
+  { id: "hps", name: "Hebert Professional Services", tier: "platinum", logoFile: "hps-logo.png", website: "https://hebertps.com/" },
 
   // Gold
   { id: "ms-army-national-guard", name: "Mississippi Army National Guard", tier: "gold", logoFile: "msArmyNationalGuard-logo.png", website: "https://nationalguard.com/mississippi" },

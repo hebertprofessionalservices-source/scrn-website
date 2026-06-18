@@ -129,7 +129,7 @@ export function VVNav() {
               onClick={() => setMenuOpen(false)}
               className="text-4xl font-editorial text-scrn-red hover:text-scrn-red-bright transition-colors py-2"
             >
-              SCRN
+              State Championships Radio Network
             </Link>
           </nav>
           <Link

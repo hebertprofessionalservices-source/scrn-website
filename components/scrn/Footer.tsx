@@ -136,7 +136,7 @@ export function SCRNFooter() {
           <p className="text-scrn-silver/40 text-xs tracking-wide text-center">
             Created and maintained by Hebert Professional Services, LLC
           </p>
-          <div className="relative w-10 h-10 opacity-40">
+          <div className="relative w-20 h-16 opacity-50">
             <Image
               src="/assets/hps-logo.png"
               alt="Hebert Professional Services"
