@@ -67,9 +67,9 @@ export function VVNav() {
               {/* SCRN link */}
               <Link
                 href="/"
-                className="ml-2 px-3 py-2 text-xs tracking-widest uppercase font-sans font-medium border border-scrn-red/50 text-scrn-red hover:bg-scrn-red hover:text-white transition-all duration-150"
+                className="ml-2 px-3 py-2 text-xs tracking-widest uppercase font-sans font-medium border border-scrn-red/50 text-scrn-red hover:bg-scrn-red hover:text-white transition-all duration-150 whitespace-nowrap"
               >
-                SCRN
+                State Championships Radio Network
               </Link>
             </div>
 

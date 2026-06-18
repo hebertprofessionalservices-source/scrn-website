@@ -72,7 +72,7 @@ export default function VarsityVoicesPage() {
             Mississippi High School Football
           </p>
 
-          <h1 className="animate-fade-up delay-200 font-editorial text-5xl sm:text-7xl md:text-8xl text-vv-off-white leading-tight">
+          <h1 className="animate-fade-up delay-200 font-editorial text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-vv-off-white leading-tight whitespace-nowrap">
             Mississippi&apos;s #1 Source<br />
             <span className="text-vv-gold">for High School Football</span>
           </h1>
